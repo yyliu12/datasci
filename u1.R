@@ -6,7 +6,7 @@ library(dplyr)
 
 ggplot(titanic_data %>% filter(Survived == 1 & !is.na(Age)), 
        aes(x = Age, color = Age)) + 
-  geom_histogram(position="identity", fill="white") + 
+  geom_histogram(position="identity") + 
   labs(y="Count", title="Survival grouped by Age on the Titanic")
 
 
